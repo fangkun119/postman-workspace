@@ -1,0 +1,69 @@
+{
+  "info": {
+    "_postman_id": "6e27242f-6685-4820-9c9e-9c7923788a4c",
+    "name": "spring_cloud_alibaba_demo",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "tlmall_order - post: /order/create",
+      "id": "7a5c8d04-f775-4fe8-b595-6e38f81adbba",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Accept",
+            "value": "application/json, text/javascript, */*; q=0.01"
+          },
+          {
+            "key": "Accept-Language",
+            "value": "zh-CN,zh;q=0.9"
+          },
+          {
+            "key": "Connection",
+            "value": "keep-alive"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/x-www-form-urlencoded; charset=UTF-8"
+          },
+          {
+            "key": "Origin",
+            "value": "http://localhost:8080"
+          },
+          {
+            "key": "Referer",
+            "value": "http://localhost:8080/"
+          },
+          {
+            "key": "User-Agent",
+            "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "userId=fox&commodityCode=1&count=1",
+          "options": {
+            "raw": {
+              "language": "text"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://tlmall-gateway:18888/order/create",
+          "protocol": "http",
+          "host": [
+            "tlmall-gateway"
+          ],
+          "port": "18888",
+          "path": [
+            "order",
+            "create"
+          ]
+        },
+        "description": "Generated from cURL: curl 'http://tlmall-gateway:18888/order/create' \\\n  -H 'Accept: application/json, text/javascript, */*; q=0.01' \\\n  -H 'Accept-Language: zh-CN,zh;q=0.9' \\\n  -H 'Connection: keep-alive' \\\n  -H 'Content-Type: application/x-www-form-urlencoded; charset=UTF-8' \\\n  -H 'Origin: http://localhost:8080' \\\n  -H 'Referer: http://localhost:8080/' \\\n  -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36' \\\n  --data-raw 'userId=fox&commodityCode=1&count=1' \\\n  --insecure"
+      },
+      "response": []
+    }
+  ]
+}
