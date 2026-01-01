@@ -1,0 +1,37 @@
+{
+  "info": {
+    "_postman_id": "75d07f3a-2052-48bb-b0e4-1d6a1899848c",
+    "name": "spring_cloud_alibaba_nacos",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "tlmall_user - get: /user/getOrder",
+      "id": "eabc5cd1-1b97-41df-81f1-4b746fc9b48c",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8050/user/getOrder?userId=fox",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8050",
+          "path": [
+            "user",
+            "getOrder"
+          ],
+          "query": [
+            {
+              "key": "userId",
+              "value": "fox",
+              "uuid": "1446d3d9-ffde-417b-9384-8936d5faf701"
+            }
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
