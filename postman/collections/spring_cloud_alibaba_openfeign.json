@@ -1,0 +1,82 @@
+{
+  "info": {
+    "_postman_id": "76367f20-67ca-4331-aab6-8b8686704a4d",
+    "name": "spring_cloud_alibaba_openfeign",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "tlmall-user-openfeign - get: /user/{UserID}/orders",
+      "id": "295fd497-1972-47e2-a6d5-4d5d98978b9e",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "X-CLIENT-IP",
+            "value": "10.231.52.60",
+            "type": "text",
+            "uuid": "1a84b649-3660-4f2c-b267-b2119593b483"
+          },
+          {
+            "key": "Authorization",
+            "value": "xxxx-xxxx-xxxx-xxxx-xxxx",
+            "type": "text",
+            "uuid": "b56c4e40-d1ca-489b-8e6c-ab012c84211e"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:8050/users/fox/orders",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8050",
+          "path": [
+            "users",
+            "fox",
+            "orders"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "tlmall-user-openfeign - post: /user/{UserID}/orders",
+      "id": "cfaab5ba-c82c-4b0f-9118-888a4fb70729",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "xxxx-xxxx-xxxx-xxxx-xxxx",
+            "type": "text",
+            "uuid": "5be549cf-08f8-49d5-b3ae-0df2093fa1f5"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"commodityCode\": \"1\",\n    \"count\": 1,\n    \"money\": 2\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8050/users/fox/orders",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8050",
+          "path": [
+            "users",
+            "fox",
+            "orders"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}

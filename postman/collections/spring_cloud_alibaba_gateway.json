@@ -1,0 +1,125 @@
+{
+  "info": {
+    "_postman_id": "e810d54e-db53-41b9-be53-b3cab94de8e8",
+    "name": "spring_cloud_alibaba_gateway",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "tlmall-gateway - get: /orders",
+      "id": "079c82d2-c1b8-4ad9-9c85-66b83a8625e4",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "token",
+            "value": "sample_valid_token_string",
+            "type": "text",
+            "uuid": "66c6987e-9951-47c8-8dcc-1d40bce5ed09",
+            "disabled": true
+          },
+          {
+            "key": "X-Request-Id",
+            "value": "123",
+            "type": "text",
+            "uuid": "9f4760d9-c16a-4af5-8512-1fe9bbc048e4",
+            "disabled": true
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:18888/orders?userId=fox",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "18888",
+          "path": [
+            "orders"
+          ],
+          "query": [
+            {
+              "key": "userId",
+              "value": "fox",
+              "uuid": "c0cc16b3-c761-4a89-85ec-76438b0eefec"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "tlmall-gateway - get: /orders/request-headers/x-request-color",
+      "id": "baeb42fd-a616-418a-970d-7156f8b55e1a",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:18888/orders/request-headers/x-request-color",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "18888",
+          "path": [
+            "orders",
+            "request-headers",
+            "x-request-color"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "tlmall-gateway - get: /orders/request-headers/http://localhost:18888/orders/request-headers/businessdomain",
+      "id": "09703192-4935-4e4c-b992-99f1b4067ef6",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "",
+            "value": "",
+            "type": "text",
+            "uuid": "03d05bab-4487-45ba-9637-8d67f16c2d17",
+            "disabled": true
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:18888/orders/request-headers/businessdomain",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "18888",
+          "path": [
+            "orders",
+            "request-headers",
+            "businessdomain"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "tlmall-gateway - get: /orders/request-parameter/color",
+      "id": "3dce0892-74fb-4c08-a199-e0c5e1ded733",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:18888/orders/request-params/color",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "18888",
+          "path": [
+            "orders",
+            "request-params",
+            "color"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}

@@ -1,0 +1,81 @@
+{
+  "info": {
+    "_postman_id": "5af2980d-739b-4935-8437-631551a78449",
+    "name": "spring_cloud_alibaba_nacos_config",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "tlmall-config-demo-order - get: /user/getOrder",
+      "id": "79e99c08-783c-46bf-965b-ea26b1ab4f21",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "X-CLIENT-IP",
+            "value": "10.231.52.69",
+            "type": "text",
+            "uuid": "1a84b649-3660-4f2c-b267-b2119593b483"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"userId\":\"fox\",\n    \"commodityCode\":1,\n    \"money\":1.1\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8060/config-demo/orders",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8060",
+          "path": [
+            "config-demo",
+            "orders"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "tlmall-config-demo-order - get: /user/getOrder?userId=fox",
+      "id": "31cc09b8-82e0-499d-a57f-a07c0cf2d7d7",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "X-CLIENT-IP",
+            "value": "10.231.52.69",
+            "type": "text",
+            "uuid": "1a84b649-3660-4f2c-b267-b2119593b483"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:8060/config-demo/orders?userId=fox",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8060",
+          "path": [
+            "config-demo",
+            "orders"
+          ],
+          "query": [
+            {
+              "key": "userId",
+              "value": "fox",
+              "uuid": "7441f3c3-9121-48c9-8a93-e8606c8c549d"
+            }
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}

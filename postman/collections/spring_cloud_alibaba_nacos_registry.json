@@ -1,7 +1,7 @@
 {
   "info": {
     "_postman_id": "75d07f3a-2052-48bb-b0e4-1d6a1899848c",
-    "name": "spring_cloud_alibaba_nacos",
+    "name": "spring_cloud_alibaba_nacos_registry",
     "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
   },
   "item": [
@@ -10,7 +10,14 @@
       "id": "eabc5cd1-1b97-41df-81f1-4b746fc9b48c",
       "request": {
         "method": "GET",
-        "header": [],
+        "header": [
+          {
+            "key": "X-CLIENT-IP",
+            "value": "10.231.52.69",
+            "type": "text",
+            "uuid": "1a84b649-3660-4f2c-b267-b2119593b483"
+          }
+        ],
         "url": {
           "raw": "http://localhost:8050/user/getOrder?userId=fox",
           "protocol": "http",
